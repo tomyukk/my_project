@@ -1,0 +1,117 @@
+.main_content {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.main_content .item_product {
+    background-color: white;
+    vertical-align: top;
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    height: 400px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main_content .item_product:hover {
+    background-color: rgb(255, 192, 203);
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    opacity: 0.5%;
+}
+
+.main_content .item_product:hover .events {
+    display: inline-block;
+}
+
+.main_content .item_product .events {
+    position: absolute;
+    font-size: 2.3em;
+    z-index: 5;
+    text-align: center;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.main_content .item_product .events span {
+    display: inline-block;
+    background-color: #009ccc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    top: 25%;
+}
+
+.main_content .item_product .events span:hover {
+    transition: 0.5s;
+    background-color: #ff558d;
+    font-weight: 600;
+    transform: scale(1.1, 1.1);
+}
+
+.main_content .item_product:hover .main_content .item_product img {
+    transform: scale(1.1, 1.1);
+}
+
+.main_content .item_product img {
+    z-index: 10;
+    height: 200px;
+    max-width: 200px;
+}
+
+.main_content .item_product span {
+    display: block;
+}
+.delete_product{
+    width: 100%;
+    z-index: 10;
+}
+.delete_product i{
+    float: right;
+    font-size: 25px;
+    color: orange;
+}
+.main_content .item_product .price {
+    padding: 10px;
+    background-color: #f9da4b;
+    width: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.main_content .item_product .description {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main_content .item_product {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main_content .item_product {
+        width: 75%;
+    }
+}
